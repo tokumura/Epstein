@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  vocal: MyString
+  solo: false
+  first: false
+  last: false
+  piano: false
+
+two:
+  title: MyString
+  vocal: MyString
+  solo: false
+  first: false
+  last: false
+  piano: false

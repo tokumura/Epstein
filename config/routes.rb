@@ -1,4 +1,8 @@
 Epstein::Application.routes.draw do
+  resources :mainmenu, :only => ['index']
+  resources :musics
+  resources :setlist, :only => ['index']
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

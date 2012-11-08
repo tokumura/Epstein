@@ -1,19 +1,22 @@
 # coding: utf-8
 
 Given /^遷移先にセットリスト作成と楽曲管理がある。$/ do
-  #pending # express the regexp above with the code you wish you had
+  visit musics_path
+  visit setlist_index_path
 end
 
 When /^メインメニュー画面が表示された時、$/ do
-  visit mainmenu_path
-  #pending # express the regexp above with the code you wish you had
+  visit mainmenu_index_path
 end
 
 Then /^Epsteinというタイトルが表示される。$/ do
-  pending # express the regexp above with the code you wish you had
+  pending
+  page.should have_content('EPSTEIN')
 end
 
 Then /^セットリスト作成 と 楽曲管理 の２つのリンクが表示される。$/ do
-  pending # express the regexp above with the code you wish you had
+  pending
+  page.should have_content('セットリスト作成')
+  page.should have_content('楽曲管理')
 end
 

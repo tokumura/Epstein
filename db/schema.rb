@@ -11,6 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20121108030021) do
+
+  create_table "musics", :force => true do |t|
+    t.string   "title"
+    t.string   "vocal"
+    t.boolean  "solo"
+    t.boolean  "first"
+    t.boolean  "last"
+    t.boolean  "piano"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
