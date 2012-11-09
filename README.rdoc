@@ -5,8 +5,9 @@ It can create setlist randomly from all beatles number.
 Also, you can set some conditions for creating setlist.
 
 For setting up on your computer. (Require Ruby1.9.3, Rails3.2)
-  1. 'git clone'.
-  2. 'bundle install'
-  3. 'rails s'
-  4. Access to 'http://yourhost:3000/'
-  4. That's all. Have a nice play. (^^)/
+  1. 'git clone git@vm-ubuntu2.epstein.git'.
+  2. 'cd epstein'
+  3. 'bundle install'
+  4. 'rails s'
+  5. Access to 'http://yourhost:3000/'
+  6. That's all. Have a nice play. (^^)/
