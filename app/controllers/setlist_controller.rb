@@ -6,4 +6,11 @@ class SetlistController < ApplicationController
     end
   end
 
+  def make
+    respond_to do |format|
+      format.html # index.html.erb
+    end
+  end
+
+
 end

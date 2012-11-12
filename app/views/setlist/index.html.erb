@@ -1,0 +1,31 @@
+
+<h1>セットリスト</h1>
+
+<%= form_tag({:controller => 'setlist', :action => 'make'}, :method => :get) do |f| %>
+
+<h2>セットリスト作成条件</h2>
+
+曲数
+<select name="number_of_song">
+  <% (5..30).each_with_index do |i| %>
+    <option value="<%=i%>"><%=i%></option>
+  <% end %>
+</select><br>
+
+ジョージ曲数
+<select name="number_of_george">
+  <% (0..10).each_with_index do |i| %>
+    <option value="<%=i%>"><%=i%></option>
+  <% end %>
+</select><br>
+
+リンゴ曲数
+<select name="number_of_ringo">
+  <% (0..10).each_with_index do |i| %>
+    <option value="<%=i%>"><%=i%></option>
+  <% end %>
+</select><br>
+
+<input type="button" name="make" value="作成">
+
+<% end %>

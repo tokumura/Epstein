@@ -13,4 +13,11 @@ describe SetlistController do
     end
   end
 
+  describe "GET /make_setlist_index" do
+    it "should be successfull" do
+      get 'make'
+      response.should be_success
+    end
+  end
+
 end
