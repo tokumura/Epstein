@@ -2,7 +2,6 @@
 require 'spec_helper'
 
 describe SetlistController do
-
   before do
   end
 

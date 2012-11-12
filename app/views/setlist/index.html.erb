@@ -28,4 +28,9 @@
 
 <input type="button" name="make" value="作成">
 
+<% @musics = Music.all %>
+<% @musics.each do |music| %>
+  <a href="#"><%=music.title%></a>
+<% end %>
+
 <% end %>

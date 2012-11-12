@@ -2,8 +2,16 @@
 require 'spec_helper'
 
 describe "setlist/index.html.erb" do
+
+  fixtures :musics
+
   before do
     render
+#    @musics = Music.all
+  end
+
+  it "楽曲リスト内に'Help!'が表示されている。" do
+    rendered.should have_content("Help!")
   end
 
   it "'セットリスト'というタイトルラベルが表示されている。" do
