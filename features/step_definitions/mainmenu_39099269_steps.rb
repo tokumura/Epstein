@@ -15,8 +15,6 @@ end
 
 Then /^セットリスト作成 と 楽曲管理 の２つのリンクが表示される。$/ do
   page.should have_content('セットリスト作成')
-  click_link('セットリスト作成')
   page.should have_content('楽曲管理')
-  click_link('楽曲管理')
 end
 
