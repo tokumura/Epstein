@@ -15,15 +15,15 @@ Then /^セットリスト条件の項目が表示されている。$/ do
 end
 
 Then /^曲数のリストボックスが表示されている。$/ do
-  select '10', :from => 'number_of_song'
+  select '10', :from => 'setlist[number_of_songs]'
 end
 
 Then /^ジョージ曲数のリストボックスが表示されている。$/ do
-  select '10', :from => 'number_of_george'
+  select '10', :from => 'setlist[number_of_george]'
 end
 
 Then /^リンゴ曲数のリストボックスが表示されている。$/ do
-  select '10', :from => 'number_of_ringo'
+  select '10', :from => 'setlist[number_of_ringo]'
 end
 
 Then /^'作成'ボタンが表示されている。$/ do

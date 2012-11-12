@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/brynary/webrat.git
+  revision: 931c080502d3199637cb3e5ca3c9490bad8be8a9
+  specs:
+    webrat (0.7.5)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -174,3 +183,4 @@ DEPENDENCIES
   sqlite3
   therubyracer
   uglifier (>= 1.0.3)
+  webrat!

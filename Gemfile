@@ -29,6 +29,7 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'simplecov', :require => false
+  gem "webrat", :git => "git://github.com/brynary/webrat.git"
 end
 
 # To use ActiveModel has_secure_password

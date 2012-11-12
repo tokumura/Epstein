@@ -3,6 +3,7 @@ class MusicsController < ApplicationController
   # GET /musics.json
   def index
     @musics = Music.all
+    @music = Music.new
 
     respond_to do |format|
       format.html # index.html.erb

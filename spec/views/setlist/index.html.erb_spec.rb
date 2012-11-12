@@ -6,8 +6,9 @@ describe "setlist/index.html.erb" do
   fixtures :musics
 
   before do
+    @musics = Music.all
+    @setlist = Setlist.new
     render
-#    @musics = Music.all
   end
 
   it "楽曲リスト内に'Help!'が表示されている。" do
@@ -26,7 +27,7 @@ describe "setlist/index.html.erb" do
   end
   it "'曲数'セレクトボックスが表示されている。" do
     rendered.should have_selector("form") do |form|
-      form.should have_selector("select", :name => "number_of_song")
+      form.should have_selector("select", :name => "setlist[number_of_songs]")
     end
   end
 
@@ -35,16 +36,16 @@ describe "setlist/index.html.erb" do
   end
   it "'ジョージ曲数'セレクトボックスが表示されている。" do
     rendered.should have_selector("form") do |form|
-      form.should have_selector("select", :name => "number_of_george")
+      form.should have_selector("select", :name => "setlist[number_of_george]")
     end
   end
 
   it "'リンゴ曲数'というラベルが表示されている。" do
     rendered.should have_content("リンゴ曲数")
   end
-  it "'ジョージ曲数'セレクトボックスが表示されている。" do
+  it "'リンゴ曲数'セレクトボックスが表示されている。" do
     rendered.should have_selector("form") do |form|
-      form.should have_selector("select", :name => "number_of_ringo")
+      form.should have_selector("select", :name => "setlist[number_of_ringo]")
     end
   end
 
