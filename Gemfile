@@ -27,6 +27,8 @@ group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'spork-rails'
   gem 'cucumber-rails', :require => false
+  gem 'headless'
+  gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
   gem "webrat"

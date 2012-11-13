@@ -1,25 +1,80 @@
 
 <h1>セットリスト</h1>
 
-<em>aaa</em>
+<a href="<%=mainmenu_index_path%>">メインメニュー</a>
+<br/>
+<br/>
 
 <%= form_for(@setlist, :url => make_setlist_index_path, :html => {}) do |f| %>
 
+
+<div id="setlist">
+  <% row = 1 %>
+  <table id="musics_table" border="1">
+    <tr>
+      <td colspan="2">曲名</td>
+    </tr>
+  </table>
+</div>
+
 <h2>セットリスト作成条件</h2>
 
+<% all_songs_array = (5..30) %>
+<% solo_songs_array = (0..10) %>
+
 曲数
-<%= f.select :number_of_songs, [5,6,7,10] %>
+<%= f.select :number_of_songs, all_songs_array, { :selected => '5' } %>
 
 ジョージ曲数
-<%= f.select :number_of_george, [5,6,7,10] %>
+<%= f.select :number_of_george, solo_songs_array, { :selected => '0' } %>
 
 リンゴ曲数
-<%= f.select :number_of_ringo, [5,6,7,10] %>
+<%= f.select :number_of_ringo, solo_songs_array, { :selected => '0' } %>
 
-<input type="button" name="make" value="作成">
+&nbsp;&nbsp;<input type="button" name="make" value="作成">
 
-<% @musics.each do |music| %>
-  <a href="#"><%=music.title%></a>
+<br/>
+<br/>
+
+<div id="music_list">
+  <table border="1">
+  <% @musics.each do |music| %>
+  <%
+    music_esc = music.title.dup
+    music_esc.gsub!(/'/) do |m|
+      '\\' + m
+    end
+  %>
+    <tr>
+      <td><a href="javascript:add_song('<%=music_esc%>')"><%=music.title%></a></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <% row = row + 1 %>
+  <input type="hidden" id="addrow" value="<%=row%>" />
+  <input type="hidden" id="addidx" value="1" />
+</div>
+
 <% end %>
 
-<% end %>
+<script type="text/javascript">
+<!--
+function add_song(song) {
+  var addrow = $('#addrow').val();
+  var addidx = $('#addidx').val();
+  $('table#musics_table').append(
+    '<tr id="tr_' + addrow + '">' +
+      '<td>' + song + '</td>' +
+      '<td><a href="javascript:remove_song(\'tr_' + addrow + '\')">Delete</td>'
+  );
+  $('#addrow').val(parseInt(addrow) + 1);
+  $('#addidx').val(parseInt(addidx) + 1);
+  addrow = $('#addrow').val();
+}
+function remove_song(target) {
+  $('tr#' + target).remove();
+}
+// -->
+</script>
+

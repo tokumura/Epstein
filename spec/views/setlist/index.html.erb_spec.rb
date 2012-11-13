@@ -11,10 +11,6 @@ describe "setlist/index.html.erb" do
     render
   end
 
-  it "楽曲リスト内に'Help!'が表示されている。" do
-    rendered.should have_content("Help!")
-  end
-
   it "'セットリスト'というタイトルラベルが表示されている。" do
     rendered.should have_content("セットリスト")
   end
@@ -54,4 +50,9 @@ describe "setlist/index.html.erb" do
       form.should have_selector("input", :type => "button", :name => "make")
     end
   end
+
+  it "'メインメニュー'というリンクが表示されている。" do
+    rendered.should have_content("メインメニュー")
+  end
+
 end

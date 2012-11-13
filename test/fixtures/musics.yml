@@ -1,17 +1,2321 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+george1:
+  id: 1
+  title: All Things Must Pass
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george2:
+  id: 2
+  title: Blue Jay Way
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george3:
+  id: 3
+  title: Chains
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george4:
+  id: 4
+  title: Crying, Waiting, Hoping
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george5:
+  id: 5
+  title: Devil in Her Heart
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george6:
+  id: 6
+  title: Do You Want to Know a Secret
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george7:
+  id: 7
+  title: Don't Bother Me
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george8:
+  id: 8
+  title: Don't Ever Change
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george9:
+  id: 9
+  title: Everybody's Trying to Be My Baby
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george10:
+  id: 10
+  title: For You Blue
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george11:
+  id: 11
+  title: Glad All Over
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george12:
+  id: 12
+  title: Here Comes the Sun
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george13:
+  id: 13
+  title: I Forgot to Remember to Forget
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george14:
+  id: 14
+  title: I Me Mine
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george15:
+  id: 15
+  title: I Need You
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george16:
+  id: 16
+  title: I Want to Tell You
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george17:
+  id: 17
+  title: If I Needed Someone
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george18:
+  id: 18
+  title: I'm Happy Just to Dance with You
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george19:
+  id: 19
+  title: It's All Too Much
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george20:
+  id: 20
+  title: Long, Long, Long
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george21:
+  id: 21
+  title: Love You To
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george22:
+  id: 22
+  title: Not Guilty
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george23:
+  id: 23
+  title: Nothin' Shakin' (But the Leaves on the Trees)
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george24:
+  id: 24
+  title: Old Brown Shoe
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george25:
+  id: 25
+  title: Only a Northern Song
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george26:
+  id: 26
+  title: Piggies
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george27:
+  id: 27
+  title: Roll Over Beethoven
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george28:
+  id: 28
+  title: Savoy Truffle
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george29:
+  id: 29
+  title: So How Come (No One Loves Me)
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george30:
+  id: 30
+  title: Something
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george31:
+  id: 31
+  title: Take Good Care of My Baby
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george32:
+  id: 32
+  title: Taxman
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george33:
+  id: 33
+  title: The Inner Light
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george34:
+  id: 34
+  title: The Sheik of Araby
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george35:
+  id: 35
+  title: Think for Yourself
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george36:
+  id: 36
+  title: Three Cool Cats
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george37:
+  id: 37
+  title: While My Guitar Gently Weeps
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george38:
+  id: 38
+  title: Within You Without You
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george39:
+  id: 39
+  title: You Know What to Do
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george40:
+  id: 40
+  title: You Like Me Too Much
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+george41:
+  id: 41
+  title: Young Blood
+  vocal: george
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo1:
+  id: 42
+  title: Act Naturally
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo2:
+  id: 43
+  title: Boys
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo3:
+  id: 44
+  title: Don't Pass Me By
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo4:
+  id: 45
+  title: Good Night
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo5:
+  id: 46
+  title: Honey Don't
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo6:
+  id: 47
+  title: I Wanna Be Your Man
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo7:
+  id: 48
+  title: If You've Got Trouble
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo8:
+  id: 49
+  title: Matchbox
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo9:
+  id: 50
+  title: Octopus's Garden
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo10:
+  id: 51
+  title: What Goes On
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo11:
+  id: 52
+  title: With a Little Help from My Friends
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+ringo12:
+  id: 53
+  title: Yellow Submarine
+  vocal: ringo
+  solo: t
+  first: f
+  last: f
+  piano: f
+john1:
+  id: 54
+  title: A Shot of Rhythm and Blues
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john2:
+  id: 55
+  title: Across the Universe
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john3:
+  id: 56
+  title: Ain't She Sweet
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john4:
+  id: 57
+  title: All I've Got to Do
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john5:
+  id: 58
+  title: All You Need Is Love
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john6:
+  id: 59
+  title: And Your Bird Can Sing
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john7:
+  id: 60
+  title: Anna (Go to Him)
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john8:
+  id: 61
+  title: Ask Me Why
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john9:
+  id: 62
+  title: Baby It's You
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john10:
+  id: 63
+  title: Baby, You're a Rich Man
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john11:
+  id: 64
+  title: Bad Boy
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john12:
+  id: 65
+  title: Bad to Me
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john13:
+  id: 66
+  title: Being for the Benefit of Mr. Kite!
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john14:
+  id: 67
+  title: Carol
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john15:
+  id: 68
+  title: Come Together
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john16:
+  id: 69
+  title: Dear Prudence
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john17:
+  id: 70
+  title: Dig a Pony
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john18:
+  id: 71
+  title: Dig It
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john19:
+  id: 72
+  title: Dizzy Miss Lizzy
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john20:
+  id: 73
+  title: Doctor Robert
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john21:
+  id: 74
+  title: Don't Let Me Down
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john22:
+  id: 75
+  title: Eight Days a Week
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john23:
+  id: 76
+  title: Everybody's Got Something to Hide Except Me and My Monkey
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john24:
+  id: 77
+  title: Girl
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john25:
+  id: 78
+  title: Glass Onion
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john26:
+  id: 79
+  title: Good Morning Good Morning
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john27:
+  id: 80
+  title: Happiness Is a Warm Gun
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john28:
+  id: 81
+  title: Hello Little Girl
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john29:
+  id: 82
+  title: Help!
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john30:
+  id: 83
+  title: Hey Bulldog
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john31:
+  id: 84
+  title: How Do You Do It?
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john32:
+  id: 85
+  title: I Am the Walrus
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john33:
+  id: 86
+  title: I Call Your Name
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john34:
+  id: 87
+  title: I Don't Want to Spoil the Party
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john35:
+  id: 88
+  title: I Feel Fine
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john36:
+  id: 89
+  title: I Got a Woman
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john37:
+  id: 90
+  title: I Got to Find My Baby
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john38:
+  id: 91
+  title: I Just Don't Understand
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john39:
+  id: 92
+  title: I Lost My Little Girl
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john40:
+  id: 93
+  title: I Should Have Known Better
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john41:
+  id: 94
+  title: I Want You (She's So Heavy)
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john42:
+  id: 95
+  title: I'll Be Back
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john43:
+  id: 96
+  title: I'll Be on My Way
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john44:
+  id: 97
+  title: I'll Cry Instead
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john45:
+  id: 98
+  title: I'm a Loser
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john46:
+  id: 99
+  title: I'm Gonna Sit Right Down and Cry (Over You)
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john47:
+  id: 100
+  title: I'm In Love
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john48:
+  id: 101
+  title: I'm Only Sleeping
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john49:
+  id: 102
+  title: I'm So Tired
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john50:
+  id: 103
+  title: I'm Talking About You
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john51:
+  id: 104
+  title: In My Life
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john52:
+  id: 105
+  title: In Spite of All the Danger
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john53:
+  id: 106
+  title: It Won't Be Long
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john54:
+  id: 107
+  title: It's Only Love
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john55:
+  id: 108
+  title: Johnny B. Goode
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john56:
+  id: 109
+  title: Julia
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john57:
+  id: 110
+  title: Keep Your Hands Off My Baby
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john58:
+  id: 111
+  title: Leave My Kitten Alone
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john59:
+  id: 112
+  title: Lonesome Tears in My Eyes
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john60:
+  id: 113
+  title: Lucy in the Sky with Diamonds
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john61:
+  id: 114
+  title: Madman
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john62:
+  id: 115
+  title: Maggie Mae
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john63:
+  id: 116
+  title: Mailman, Bring Me No More Blues
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john64:
+  id: 117
+  title: Mean Mr. Mustard
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john65:
+  id: 118
+  title: Memphis, Tennessee
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john66:
+  id: 119
+  title: Money (That's What I Want)
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john67:
+  id: 120
+  title: Mr. Moonlight
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john68:
+  id: 121
+  title: Norwegian Wood (This Bird Has Flown)
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john69:
+  id: 122
+  title: Not a Second Time
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john70:
+  id: 123
+  title: Nowhere Man
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john71:
+  id: 124
+  title: Please Mr. Postman
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john72:
+  id: 125
+  title: Polythene Pam
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john73:
+  id: 126
+  title: Rain
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john74:
+  id: 127
+  title: Real Love
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john75:
+  id: 128
+  title: Revolution
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john76:
+  id: 129
+  title: Revolution 1
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john77:
+  id: 130
+  title: Rock and Roll Music
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john78:
+  id: 131
+  title: Run for Your Life
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john79:
+  id: 132
+  title: Sexy Sadie
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john80:
+  id: 133
+  title: Shakin' in the Sixties
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john81:
+  id: 134
+  title: She Said She Said
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john82:
+  id: 135
+  title: Slow Down
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john83:
+  id: 136
+  title: Soldier of Love (Lay Down Your Arms)
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john84:
+  id: 137
+  title: Strawberry Fields Forever
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john85:
+  id: 138
+  title: Sun King
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john86:
+  id: 139
+  title: Sweet Little Sixteen
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john87:
+  id: 140
+  title: Tell Me Why
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john88:
+  id: 141
+  title: That'll Be the Day
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john89:
+  id: 142
+  title: The Ballad of John and Yoko
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john90:
+  id: 143
+  title: The Continuing Story of Bungalow Bill
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john91:
+  id: 144
+  title: Ticket to Ride
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john92:
+  id: 145
+  title: To Know Her is to Love Her
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john93:
+  id: 146
+  title: Tomorrow Never Knows
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john94:
+  id: 147
+  title: Too Much Monkey Business
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john95:
+  id: 148
+  title: Twist and Shout
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john96:
+  id: 149
+  title: Watching Rainbows
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john97:
+  id: 150
+  title: What's The New Mary Jane
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john98:
+  id: 151
+  title: When I Get Home
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john99:
+  id: 152
+  title: Yer Blues
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john100:
+  id: 153
+  title: You Can't Do That
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john101:
+  id: 154
+  title: You Really Got a Hold on Me
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john102:
+  id: 155
+  title: You're Going to Lose That Girl
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+john103:
+  id: 156
+  title: You've Got to Hide Your Love Away
+  vocal: john
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul1: 
+  id: 157
+  title: A Taste of Honey
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul2:
+  id: 158
+  title: All My Loving
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul3:
+  id: 159
+  title: And I Love Her
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul4:
+  id: 160
+  title: Another Girl
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul5:
+  id: 161
+  title: Back in the U.S.S.R.
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul6:
+  id: 162
+  title: Besame Mucho
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul7:
+  id: 163
+  title: Blackbird
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul8:
+  id: 164
+  title: Can't Buy Me Love
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul9:
+  id: 165
+  title: Clarabella
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul10:
+  id: 166
+  title: Come and Get It
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul11:
+  id: 167
+  title: Drive My Car
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul12:
+  id: 168
+  title: Eleanor Rigby
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul13:
+  id: 169
+  title: Etcetera
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul14:
+  id: 170
+  title: Fixing a Hole
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul15:
+  id: 171
+  title: For No One
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul16:
+  id: 172
+  title: Get Back
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul17:
+  id: 173
+  title: Getting Better
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul18:
+  id: 174
+  title: Golden Slumbers
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul19:
+  id: 175
+  title: Good Day Sunshine
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul20:
+  id: 176
+  title: Got to Get You into My Life
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul21:
+  id: 177
+  title: Hallelujah, I Love Her So
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul22:
+  id: 178
+  title: Hello, Goodbye
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul23:
+  id: 179
+  title: Helter Skelter
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul24:
+  id: 180
+  title: Her Majesty
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul25:
+  id: 181
+  title: Here, There and Everywhere
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul26:
+  id: 182
+  title: Hey Jude
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul27:
+  id: 183
+  title: Hippy Hippy Shake
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul28:
+  id: 184
+  title: Hold Me Tight
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul29:
+  id: 185
+  title: Honey Pie
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul30:
+  id: 186
+  title: I Will
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul31:
+  id: 187
+  title: I'll Follow the Sun
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul32:
+  id: 188
+  title: I'm Down
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul33:
+  id: 189
+  title: I'm Looking Through You
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul34:
+  id: 190
+  title: I've Just Seen a Face
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul35:
+  id: 191
+  title: Jazz Piano Song
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul36:
+  id: 192
+  title: Junk
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul37:
+  id: 193
+  title: Kansas City/Hey, Hey, Hey, Hey
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul38:
+  id: 194
+  title: Lady Madonna
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul39:
+  id: 195
+  title: Let It Be
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul40:
+  id: 196
+  title: Like Dreamers Do
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul41:
+  id: 197
+  title: Long Tall Sally
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul42:
+  id: 198
+  title: Looking Glass
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul43:
+  id: 199
+  title: Love of the Loved
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul44:
+  id: 200
+  title: Lovely Rita
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul45:
+  id: 201
+  title: Lucille
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul46:
+  id: 202
+  title: Magical Mystery Tour
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul47:
+  id: 203
+  title: Martha My Dear
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul48:
+  id: 204
+  title: Maxwell's Silver Hammer
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul49:
+  id: 205
+  title: Michelle
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul50:
+  id: 206
+  title: Mother Nature's Son
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul51:
+  id: 207
+  title: Ob-La-Di, Ob-La-Da
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul52:
+  id: 208
+  title: Oh! Darling
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul53:
+  id: 209
+  title: One and One Is Two
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul54:
+  id: 210
+  title: Ooh! My Soul
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul55:
+  id: 211
+  title: Paperback Writer
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul56:
+  id: 212
+  title: Penny Lane
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul57:
+  id: 213
+  title: P.S. I Love You
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul58:
+  id: 214
+  title: Rocky Raccoon
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul59:
+  id: 215
+  title: Searchin'
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul60:
+  id: 216
+  title: September in the Rain
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul61:
+  id: 217
+  title: Sgt. Pepper's Lonely Hearts Club Band
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul62:
+  id: 218
+  title: She Came in Through the Bathroom Window
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul63:
+  id: 219
+  title: She's a Woman
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul64:
+  id: 220
+  title: Step Inside Love/Los Paranoias
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul65:
+  id: 221
+  title: Sure to Fall (In Love with You)
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul66:
+  id: 222
+  title: Teddy Boy
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul67:
+  id: 223
+  title: That Means a Lot
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul68:
+  id: 224
+  title: That's All Right (Mama)
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul69:
+  id: 225
+  title: The End
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul70:
+  id: 226
+  title: The Fool on the Hill
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul71:
+  id: 227
+  title: The Honeymoon Song
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul72:
+  id: 228
+  title: The Long and Winding Road
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul73:
+  id: 229
+  title: The Night Before
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul74:
+  id: 230
+  title: Things We Said Today
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul75:
+  id: 231
+  title: Till There Was You
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul76:
+  id: 232
+  title: What You're Doing
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul77:
+  id: 233
+  title: When I'm Sixty-Four
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul78:
+  id: 234
+  title: Why Don't We Do It in the Road?
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul79:
+  id: 235
+  title: Wild Honey Pie
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul80:
+  id: 236
+  title: Woman
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul81:
+  id: 237
+  title: Yesterday
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul82:
+  id: 238
+  title: You Never Give Me Your Money
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul83:
+  id: 239
+  title: You Won't See Me
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul84:
+  id: 240
+  title: You'll Be Mine
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+paul85:
+  id: 241
+  title: Your Mother Should Know
+  vocal: paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney1:
+  id: 242
+  title: A Day in the Life
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney2:
+  id: 243
+  title: A Hard Day's Night
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney3:
+  id: 244
+  title: All Together Now
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney4:
+  id: 245
+  title: Any Time at All
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney5:
+  id: 246
+  title: Baby's in Black
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney6:
+  id: 247
+  title: Because
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney7:
+  id: 248
+  title: Birthday
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney8:
+  id: 249
+  title: Carry That Weight
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney9:
+  id: 250
+  title: Christmas Time (Is Here Again)
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney10:
+  id: 251
+  title: Cry Baby Cry
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney11:
+  id: 252
+  title: Day Tripper
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney12:
+  id: 253
+  title: Every Little Thing
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney13:
+  id: 254
+  title: Free as a Bird
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney14:
+  id: 255
+  title: From Me to You
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney15:
+  id: 256
+  title: From Us to You
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney16:
+  id: 257
+  title: I Saw Her Standing There
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney17:
+  id: 258
+  title: I Want to Hold Your Hand
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney18:
+  id: 259
+  title: If I Fell
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney19:
+  id: 260
+  title: I'll Get You
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney20:
+  id: 261
+  title: I'll Keep You Satisfied
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney21:
+  id: 262
+  title: I've Got a Feeling
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney22:
+  id: 263
+  title: Komm Gib Mir Deine Hand
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney23:
+  id: 264
+  title: Lend Me Your Comb
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney24:
+  id: 265
+  title: Little Child
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney25:
+  id: 266
+  title: Love Me Do
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney26:
+  id: 267
+  title: Misery
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney27:
+  id: 268
+  title: Moonlight Bay
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney28:
+  id: 269
+  title: No Reply
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney29:
+  id: 270
+  title: One After 909
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney30:
+  id: 271
+  title: Please Please Me
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney31:
+  id: 272
+  title: Rip It Up/Shake, Rattle, and Roll"/"Blue Suede Shoes""
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney32:
+  id: 273
+  title: Sgt. Pepper's Lonely Hearts Club Band (Reprise)
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney33:
+  id: 274
+  title: She Loves You
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney34:
+  id: 275
+  title: She's Leaving Home
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney35:
+  id: 276
+  title: Shout
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney36:
+  id: 277
+  title: Sie Liebt Dich
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney37:
+  id: 278
+  title: Some Other Guy
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney38:
+  id: 279
+  title: Tell Me What You See
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney39:
+  id: 280
+  title: Thank You Girl
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney40:
+  id: 281
+  title: The Word
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney41:
+  id: 282
+  title: There's a Place
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney42:
+  id: 283
+  title: This Boy
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney43:
+  id: 284
+  title: Tip of My Tongue
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney44:
+  id: 285
+  title: Two of Us
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney45:
+  id: 286
+  title: Wait
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney46:
+  id: 287
+  title: We Can Work It Out
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney47:
+  id: 288
+  title: Words of Love
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney48:
+  id: 289
+  title: Yes It Is
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
+lennon_mccartney49:
+  id: 290
+  title: You Know My Name (Look Up the Number)
+  vocal: john and paul
+  solo: f
+  first: f
+  last: f
+  piano: f
 
-one:
-  title: MyString
-  vocal: MyString
-  solo: false
-  first: false
-  last: false
-  piano: false
-
-two:
-  title: MyString
-  vocal: MyString
-  solo: false
-  first: false
-  last: false
-  piano: false
