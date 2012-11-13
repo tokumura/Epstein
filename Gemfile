@@ -23,13 +23,13 @@ end
 gem 'jquery-rails'
 gem 'therubyracer'
 
-group :test do
+group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'spork-rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'simplecov', :require => false
-  gem "webrat", :git => "git://github.com/brynary/webrat.git"
+  gem "webrat"
 end
 
 # To use ActiveModel has_secure_password
