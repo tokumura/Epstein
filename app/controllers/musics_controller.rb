@@ -1,3 +1,4 @@
+# coding: utf-8
 class MusicsController < ApplicationController
   # GET /musics
   # GET /musics.json
@@ -24,14 +25,14 @@ class MusicsController < ApplicationController
 
   # GET /musics/new
   # GET /musics/new.json
-  def new
-    @music = Music.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @music }
-    end
-  end
+#  def new
+#    @music = Music.new
+#
+#    respond_to do |format|
+#      format.html # new.html.erb
+#      format.json { render json: @music }
+#    end
+#  end
 
   # GET /musics/1/edit
   def edit
@@ -42,15 +43,11 @@ class MusicsController < ApplicationController
   # POST /musics.json
   def create
     @music = Music.new(params[:music])
-
-    respond_to do |format|
-      if @music.save
-        format.html { redirect_to @music, notice: 'Music was successfully created.' }
-        format.json { render json: @music, status: :created, location: @music }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @music.errors, status: :unprocessable_entity }
-      end
+    if @music.save
+      flash[:notice] = "曲は追加されました。"
+      redirect_to :action => "index"
+    else
+      render :action => "new"
     end
   end
 

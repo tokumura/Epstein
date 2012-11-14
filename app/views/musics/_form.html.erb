@@ -1,3 +1,5 @@
+<h1>楽曲管理</h1>
+
 <%= form_for(@music) do |f| %>
   <% if @music.errors.any? %>
     <div id="error_explanation">
@@ -12,30 +14,30 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
+    タイトル
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :vocal %><br />
-    <%= f.text_field :vocal %>
+    ボーカル 
+    <%= f.select :vocal, ['John', 'Paul', 'George', 'Ringo', 'John&Paul'] %>
   </div>
   <div class="field">
-    <%= f.label :solo %><br />
+    ソロ
     <%= f.check_box :solo %>
   </div>
   <div class="field">
-    <%= f.label :first %><br />
+    １曲目
     <%= f.check_box :first %>
   </div>
   <div class="field">
-    <%= f.label :last %><br />
+    ラスト
     <%= f.check_box :last %>
   </div>
   <div class="field">
-    <%= f.label :piano %><br />
+    ピアノ
     <%= f.check_box :piano %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :type => 'submit', :name => 'regist', :value => '登録' %>
   </div>
 <% end %>

@@ -1,8 +1,8 @@
 <h1>Listing musics</h1>
 
-<%= form_for(@music) do |f| %>
-<% end %>
+<%= render 'form' %>
 
+<div id="music_list">
 <table>
   <tr>
     <th>Title</th>
@@ -30,6 +30,7 @@
   </tr>
 <% end %>
 </table>
+</div>
 
 <br />
 
