@@ -47,12 +47,8 @@ describe "setlist/index.html.erb" do
 
   it "'作成'というボタンが表示されている。" do
     rendered.should have_selector("form") do |form|
-      form.should have_selector("input", :type => "button", :name => "make")
+      form.should have_selector("input", :type => "submit", :name => "btn-make")
     end
-  end
-
-  it "'メインメニュー'というリンクが表示されている。" do
-    rendered.should have_content("メインメニュー")
   end
 
 end

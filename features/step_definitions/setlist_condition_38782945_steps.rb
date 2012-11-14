@@ -30,7 +30,3 @@ Then /^'作成'ボタンが表示されている。$/ do
   click_on('作成')
 end
 
-Then /^'メインメニュー'リンクが表示されている。$/ do
-  page.should have_content('メインメニュー')
-end
-

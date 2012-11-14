@@ -12,9 +12,9 @@ describe SetlistController do
     end
   end
 
-  describe "GET /make_setlist_index" do
+  describe "POST /make_setlist_index" do
     it "should be successfull" do
-      get 'make'
+      post 'make', :setlist => {:number_of_songs => '10', :number_of_george => '3', :number_of_ringo => '2' }
       response.should be_success
     end
   end

@@ -3,7 +3,7 @@ Epstein::Application.routes.draw do
   resources :musics
   resources :setlist, :only => ['index'] do
     collection do
-      get :make
+      post:make
     end
   end
 

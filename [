@@ -1,0 +1,68 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <% row = 1 %>
+    <div class="span4 bs-docs-sidebar">
+      <div id="music_list">
+        <ul class="nav nav-list bs-docs-sidenav">
+        <% @musics.each do |music| %>
+          <%
+             music_esc = music.title.dup
+             music_esc.gsub!(/'/) do |m|
+               '\\' + m
+             end
+          %>
+          <li class="">
+            <a href="javascript:add_song('<%=music_esc%>')">●<%=music.title%></a>
+          </li>
+        <% end %>
+        </ul>
+        <% row = row + 1 %>
+        <input type="hidden" id="addrow" value="<%=row%>" />
+        <input type="hidden" id="addidx" value="1" />
+      </div>
+    </div> <!-- span4 -->
+
+    <div class="span8 offset4 affix">
+      <%= form_for(@setlist, :url => make_setlist_index_path, :html => {}) do |f| %>
+      <h5>セットリスト作成条件</h5>
+      <% all_songs_array = (5..30) %>
+      <% solo_songs_array = (0..10) %>
+      曲数 <%= f.select :number_of_songs, all_songs_array, { :selected => '5' }, { :style => 'width:50px' } %>
+      ジョージ曲数 <%= f.select :number_of_george, solo_songs_array, { :selected => '0' } %>
+      リンゴ曲数<%= f.select :number_of_ringo, solo_songs_array, { :selected => '0' } %>
+
+      &nbsp;&nbsp;<input type="button" name="make" value="作成">
+
+      <h5>セットリスト</h5>
+      <div id="setlist">
+        <table id="musics_table" border="1">
+          <tr>
+            <td colspan="2">曲名</td>
+          </tr>
+        </table>
+      </div>
+    </div> <!-- span8 -->
+  <% end # form_for %>
+  </div>
+</div>
+
+<script type="text/javascript">
+<!--
+function add_song(song) {
+  var addrow = $('#addrow').val();
+  var addidx = $('#addidx').val();
+  $('table#musics_table').append(
+    '<tr id="tr_' + addrow + '">' +
+      '<td>' + song + '</td>' +
+      '<td><a href="javascript:remove_song(\'tr_' + addrow + '\')">Delete</td>'
+  );
+  $('#addrow').val(parseInt(addrow) + 1);
+  $('#addidx').val(parseInt(addidx) + 1);
+  addrow = $('#addrow').val();
+}
+function remove_song(target) {
+  $('tr#' + target).remove();
+}
+// -->
+</script>
+
