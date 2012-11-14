@@ -1,9 +1,19 @@
 <div class="container-fluid">
   <div class="row-fluid">
     <% row = 1 %>
-    <div class="span4 bs-docs-sidebar">
+    <div class="span5">
+      <div class="hero-unit setlist">
+      <%= form_for(@setlist, :url => make_setlist_index_path, :html => { :class => '' }) do |f| %>
+        <% all_songs_array = (5..30) %>
+        <% solo_songs_array = (0..10) %>
+        ALL　<%= f.select :number_of_songs, all_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
+        George&nbsp;<%= f.select :number_of_george, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
+        Ringo　<%= f.select :number_of_ringo, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;&nbsp;
+        <%= f.submit '作成', { :name => 'btn-make', :class => 'btn btn-primary' } %>
+      <% end # form_for %>
+      </div>
       <div id="music_list">
-        <ul class="nav nav-list bs-docs-sidenav">
+        <ul class="nav nav-list bs-docs-sidenav well">
         <% @musics.each do |music| %>
           <%
              music_esc = music.title.dup
@@ -20,36 +30,21 @@
         <input type="hidden" id="addrow" value="<%=row%>" />
         <input type="hidden" id="addidx" value="1" />
       </div>
-    </div> <!-- span4 -->
+    </div> <!-- span6 -->
 
-    <div class="span8 offset4 affix">
+    <div class="span7">
       <div class="span10">
-      <div class="hero-unit setlist">
-      <%= form_for(@setlist, :url => make_setlist_index_path, :html => { :class => '' }) do |f| %>
-          <h5>セットリスト作成条件</h5>
-          <% all_songs_array = (5..30) %>
-          <% solo_songs_array = (0..10) %>
-          曲数
-          <%= f.select :number_of_songs, all_songs_array, {}, { :style => 'width:50px' } %>　
-          ジョージ曲数
-          <%= f.select :number_of_george, solo_songs_array, {}, { :style => 'width:50px' } %>　
-          リンゴ曲数
-          <%= f.select :number_of_ringo, solo_songs_array, {}, { :style => 'width:50px' } %>　
-          <%= f.submit '作成', { :name => 'btn-make', :class => 'btn btn-primary' } %>
-
-      <% end # form_for %>
-      </div>
-      </div>
-
-      <div class="span10">
-          <h5>セットリスト</h5>
-          <div id="setlist">
-            <table id="musics_table" border="1">
+        <div id="setlist">
+          <table id="musics_table" class="table table-hover">
+            <thead>
               <tr>
                 <td colspan="2">曲名</td>
               </tr>
-            </table>
-          </div>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div> <!-- span8 -->
   </div>
