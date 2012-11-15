@@ -3,14 +3,16 @@
     <% row = 1 %>
     <div class="span5">
       <div class="hero-unit setlist">
-      <%= form_for(@setlist, :url => make_setlist_index_path, :html => { :class => '' }) do |f| %>
-        <% all_songs_array = (5..30) %>
-        <% solo_songs_array = (0..10) %>
-        ALL　<%= f.select :number_of_songs, all_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
-        George&nbsp;<%= f.select :number_of_george, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
-        Ringo　<%= f.select :number_of_ringo, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;&nbsp;
-        <%= f.submit '作成', { :name => 'btn-make', :class => 'btn btn-primary' } %>
-      <% end # form_for %>
+        <div id="conditions">
+          <%= form_for(@setlist, :url => make_setlist_index_path, :html => { :class => '' }) do |f| %>
+            <% all_songs_array = (5..30) %>
+            <% solo_songs_array = (0..10) %>
+            ALL　<%= f.select :number_of_songs, all_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
+            George&nbsp;<%= f.select :number_of_george, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
+            Ringo　<%= f.select :number_of_ringo, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;&nbsp;
+            <%= f.submit '作成', { :name => 'btn-make', :class => 'btn btn-primary' } %>
+          <% end # form_for %>
+        </div>
       </div>
       <div id="music_list">
         <ul class="nav nav-list bs-docs-sidenav well">
@@ -35,6 +37,7 @@
     <div class="span7">
       <div class="span10">
         <div id="setlist">
+          <h4>セットリスト</h4>
           <table id="musics_table" class="table table-hover">
             <thead>
               <tr>

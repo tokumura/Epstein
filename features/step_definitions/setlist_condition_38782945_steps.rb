@@ -9,9 +9,9 @@ When /^セットリスト作成のページにアクセスした場合$/ do
 end
 
 Then /^セットリスト条件の項目が表示されている。$/ do
-  page.should have_content('曲数')
-  page.should have_content('ジョージ曲数')
-  page.should have_content('リンゴ曲数')
+  page.should have_content('ALL')
+  page.should have_content('George')
+  page.should have_content('Ringo')
 end
 
 Then /^曲数のリストボックスが表示されている。$/ do
