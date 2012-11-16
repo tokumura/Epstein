@@ -113,7 +113,9 @@
                 <tr id="tr_<%=row%>">
                   <td style="width:200px;"><%=music.title%></td>
                   <td style="width:70px;"><%=music.vocal%></td>
-                  <td style="width:20px;"><a href="javascript:remove_song('tr_<%=row%>')"><i class="icon-remove"></i></a></td>
+                  <td style="width:20px;">
+                    <a href="javascript:remove_song('tr_<%=row%>')" id="icon_<%=row%>"><i class="icon-remove"></i></a>
+                  </td>
                 </tr>
               <% end %>
             </tbody>

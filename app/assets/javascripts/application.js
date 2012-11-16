@@ -23,7 +23,7 @@ function add_song(song, vocal) {
     '<tr id="tr_' + addrow + '">' +
       '<td style="width:200px;">' + song + '</td>' +
       '<td style="width:70px;">' + vocal + '</td>' + 
-      '<td style="width:20px;"><a href="javascript:remove_song(\'tr_' + addrow + '\')">Delete</a></td>'
+      '<td style="width:20px;"><a href="javascript:remove_song(\'tr_' + addrow + '\')" id="icon_' + addrow + '"><i class="icon-remove"></i></a></td>'
   );
   $('#addrow').val(parseInt(addrow) + 1);
   $('#addidx').val(parseInt(addidx) + 1);

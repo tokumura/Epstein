@@ -19,7 +19,7 @@ Given /^セットリストに楽曲が１つ以上追加されている。$/ do
 end
 
 When /^セットリスト内の楽曲の削除リンクをクリックした場合$/ do
-  find('#tr_3').click_link('Delete') # Remove 'Girl'
+  find('#tr_3').click_link('icon_3') # Remove 'Girl'
 end
 
 Then /^選択した楽曲がセットリストから削除される。$/ do
