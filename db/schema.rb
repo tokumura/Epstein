@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(:version => 20121112070306) do
   create_table "setlists", :force => true do |t|
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
-    t.integer  "number_of_songs"
-    t.integer  "number_of_george"
-    t.integer  "number_of_ringo"
+    t.string   "number_of_ringo"
+    t.string   "number_of_george"
+    t.string   "number_of_songs"
   end
 
 end

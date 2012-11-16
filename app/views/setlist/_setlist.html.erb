@@ -1,38 +1,98 @@
 <div class="container-fluid">
   <div class="row-fluid">
-    <% row = 1 %>
+
     <div class="span5">
       <div class="hero-unit setlist">
         <div id="conditions">
-          <%= form_for(@setlist, :url => make_setlist_index_path, :html => { :class => '' }) do |f| %>
+          <%= form_for(@setlist, :url => shuffle_setlist_index_path, :html => { :class => '' }) do |f| %>
             <% all_songs_array = (5..30) %>
             <% solo_songs_array = (0..10) %>
-            ALL　<%= f.select :number_of_songs, all_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
+            ALL&nbsp;<%= f.select :number_of_songs, all_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
             George&nbsp;<%= f.select :number_of_george, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;
-            Ringo　<%= f.select :number_of_ringo, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;&nbsp;
-            <%= f.submit '作成', { :name => 'btn-make', :class => 'btn btn-primary' } %>
+            Ringo&nbsp;<%= f.select :number_of_ringo, solo_songs_array, {}, { :style => 'width:70px' } %>&nbsp;&nbsp;&nbsp;
+            <%= f.submit '作成', { :name => 'btn-shuffle', :class => 'btn btn-primary' } %>
           <% end # form_for %>
         </div>
       </div>
+
       <div id="music_list">
         <ul class="nav nav-list bs-docs-sidenav well">
-        <% @musics.each do |music| %>
-          <%
-             music_esc = music.title.dup
-             music_esc.gsub!(/'/) do |m|
-               '\\' + m
-             end
-          %>
-          <li class="">
-            <a href="javascript:add_song('<%=music_esc%>')">●<%=music.title%></a>
-          </li>
-        <% end %>
+          <li class="nav-header" style="font-size:18px;">John and Paul</li>
+          <% @musics_johnpaul.each do |music| %>
+            <%
+               music_esc = music.title.dup
+               music_esc.gsub!(/'/) do |m|
+                 '\\' + m
+               end
+            %>
+            <!--<li class="nav-header">George</li>-->
+            <li class="">
+              <a href="javascript:add_song('<%=music_esc%>', '<%=music.vocal%>')"><i class="icon-music"></i> <%=music.title%></a>
+            </li>
+          <% end %>
+
+          <div id="john"/><br/><br/>
+          <li class="nav-header" style="font-size:18px;">John</li>
+          <% @musics_john.each do |music| %>
+            <%
+               music_esc = music.title.dup
+               music_esc.gsub!(/'/) do |m|
+                 '\\' + m
+               end
+            %>
+            <!--<li class="nav-header">George</li>-->
+            <li class="">
+              <a href="javascript:add_song('<%=music_esc%>', '<%=music.vocal%>')"><i class="icon-music"></i> <%=music.title%></a>
+            </li>
+          <% end %>
+
+          <div id="paul"/><br/><br/>
+          <li class="nav-header" style="font-size:18px;">Paul</li>
+          <% @musics_paul.each do |music| %>
+            <%
+               music_esc = music.title.dup
+               music_esc.gsub!(/'/) do |m|
+                 '\\' + m
+               end
+            %>
+            <!--<li class="nav-header">George</li>-->
+            <li class="">
+              <a href="javascript:add_song('<%=music_esc%>', '<%=music.vocal%>')"><i class="icon-music"></i> <%=music.title%></a>
+            </li>
+          <% end %>
+
+          <div id="george"/><br/><br/>
+          <li class="nav-header" style="font-size:18px;">George</li>
+          <% @musics_george.each do |music| %>
+            <%
+               music_esc = music.title.dup
+               music_esc.gsub!(/'/) do |m|
+                 '\\' + m
+               end
+            %>
+            <!--<li class="nav-header">George</li>-->
+            <li class="">
+              <a href="javascript:add_song('<%=music_esc%>', '<%=music.vocal%>')"><i class="icon-music"></i> <%=music.title%></a>
+            </li>
+          <% end %>
+
+          <div id="ringo"/><br/><br/>
+          <li class="nav-header" style="font-size:18px;">Ringo</li>
+          <% @musics_ringo.each do |music| %>
+            <%
+               music_esc = music.title.dup
+               music_esc.gsub!(/'/) do |m|
+                 '\\' + m
+               end
+            %>
+            <!--<li class="nav-header">George</li>-->
+            <li class="">
+              <a href="javascript:add_song('<%=music_esc%>', '<%=music.vocal%>')"><i class="icon-music"></i> <%=music.title%></a>
+            </li>
+          <% end %>
         </ul>
-        <% row = row + 1 %>
-        <input type="hidden" id="addrow" value="<%=row%>" />
-        <input type="hidden" id="addidx" value="1" />
       </div>
-    </div> <!-- span6 -->
+    </div> <!-- span5 -->
 
     <div class="span7">
       <div class="span10">
@@ -41,36 +101,34 @@
           <table id="musics_table" class="table table-hover">
             <thead>
               <tr>
-                <td colspan="2">曲名</td>
+                <td style="width:200px;font-size:18px;">Title</td>
+                <td style="width:70px;;font-size:18px;">Vocal</td>
+                <td style="width:20px;"></td>
               </tr>
             </thead>
             <tbody>
+              <% row = 1 %>
+              <% @setlist_shuffled.each do |music| %>
+                <% row = row + 1 %>
+                <tr id="tr_<%=row%>">
+                  <td style="width:200px;"><%=music.title%></td>
+                  <td style="width:70px;"><%=music.vocal%></td>
+                  <td style="width:20px;"><a href="javascript:remove_song('tr_<%=row%>')"><i class="icon-remove"></i></a></td>
+                </tr>
+              <% end %>
             </tbody>
           </table>
+          <div id="hdn_number_of_songs" style="font-size:1px;font-color:#fff"><%=@setlist.number_of_songs%></div>
+          <div id="hdn_number_of_george" style="font-size:1px;font-color:#fff"><%=@setlist.number_of_george%></div>
+          <div id="hdn_number_of_ringo" style="font-size:1px;font-color:#fff"><%=@setlist.number_of_ringo%></div>
         </div>
       </div>
-    </div> <!-- span8 -->
+    </div> <!-- span7 -->
   </div>
 </div>
 
-<script type="text/javascript">
-<!--
-function add_song(song) {
-  var addrow = $('#addrow').val();
-  var addidx = $('#addidx').val();
-  $('table#musics_table').append(
-    '<tr id="tr_' + addrow + '">' +
-      '<td>' + song + '</td>' +
-      '<td><a href="javascript:remove_song(\'tr_' + addrow + '\')">Delete</td>'
-  );
-  $('#addrow').val(parseInt(addrow) + 1);
-  $('#addidx').val(parseInt(addidx) + 1);
-  addrow = $('#addrow').val();
-}
-function remove_song(target) {
-  $('tr#' + target).remove();
-}
-// -->
-</script>
+<% row = row + 1 %>
+<input type="hidden" id="addrow" value="<%=row%>" />
+<input type="hidden" id="addidx" value="1" />
 
 

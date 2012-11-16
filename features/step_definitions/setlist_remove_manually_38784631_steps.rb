@@ -1,8 +1,16 @@
 # coding: utf-8
 
 Given /^セットリストに楽曲が１つ以上追加されている。$/ do
-  @musics = Music.all
-  @musics.size.should > 0
+  @musics_johnpaul = Music.find_all_by_vocal('John&Paul')
+  @musics_john = Music.find_all_by_vocal('John')
+  @musics_paul = Music.find_all_by_vocal('Paul')
+  @musics_george = Music.find_all_by_vocal('George')
+  @musics_ringo = Music.find_all_by_vocal('Ringo')
+  @musics_johnpaul.size.should > 0
+  @musics_john.size.should > 0
+  @musics_paul.size.should > 0
+  @musics_george.size.should > 0
+  @musics_ringo.size.should > 0
   visit(setlist_index_path)
   find('#music_list').click_link('Yesterday')
   find('#music_list').click_link('Girl')

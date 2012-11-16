@@ -15,3 +15,20 @@
 //= require jquery_ujs
 //= require_tree .
 
+// setlist
+function add_song(song, vocal) {
+  var addrow = $('#addrow').val();
+  var addidx = $('#addidx').val();
+  $('table#musics_table').append(
+    '<tr id="tr_' + addrow + '">' +
+      '<td style="width:200px;">' + song + '</td>' +
+      '<td style="width:70px;">' + vocal + '</td>' + 
+      '<td style="width:20px;"><a href="javascript:remove_song(\'tr_' + addrow + '\')">Delete</a></td>'
+  );
+  $('#addrow').val(parseInt(addrow) + 1);
+  $('#addidx').val(parseInt(addidx) + 1);
+  addrow = $('#addrow').val();
+}
+function remove_song(target) {
+  $('tr#' + target).remove();
+}
