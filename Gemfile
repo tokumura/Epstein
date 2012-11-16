@@ -29,6 +29,8 @@ group :test, :development do
   gem 'cucumber-rails', :require => false
   gem 'headless'
   gem 'capybara-webkit'
+  gem 'selenium-client'
+  gem 'selenium-webdriver'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
   gem "webrat"

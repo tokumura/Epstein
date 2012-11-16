@@ -16,6 +16,7 @@ end
 
 When /^楽曲リンクをクリックした場合$/ do
   find('#music_list').click_link('Yesterday')
+  page.execute_script 'window.confirm = function () { return true }'
 end
 
 Then /^選択した楽曲がセットリストに追加される。$/ do
