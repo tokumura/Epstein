@@ -20,13 +20,32 @@ class Setlist < ActiveRecord::Base
     ringo_all = Music.find_all_by_vocal('Ringo')
     @ringo= ringo_all.to_a.sample(num_ringo)
 
-    other_all = Music.where('vocal != ? AND vocal != ?', 'George', 'Ringo')
+    first_songs = Music.where('vocal != ? AND vocal != ? AND first = ?', 'George', 'Ringo', 't')
+    @first = first_songs.to_a.sample(1)
+
+    last_songs = Music.where('vocal != ? AND vocal != ? AND last = ?', 'George', 'Ringo', 't')
+    @last = last_songs.to_a.sample(1)
+
+    other_all = Music.where('vocal != ? AND vocal != ? AND title != ? AND title != ?',
+                            'George', 'Ringo', @first[0].title, @last[0].title)
+
     if num_songs < (num_george + num_ringo)
       num_songs = num_george + num_ringo
     end
-    @other = other_all.to_a.sample(num_songs - (num_george + num_ringo))
 
+    num_other = num_songs - (num_george + num_ringo + 2) # '2'=(first+last)
+    if num_other < 0
+      num_other = 0
+    end
+    @other = other_all.to_a.sample(num_other)
     @shuffled = @other.concat(@george.concat(@ringo))
     @shuffled = @shuffled.to_a.sample(num_songs)
+    if @shuffled.size < 10
+      @shuffled.insert(0, @first[0])
+    end
+    if @shuffled.size < 10
+      @shuffled = @shuffled.concat(@last)
+    end
+    @shuffled
   end
 end

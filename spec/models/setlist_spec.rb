@@ -57,6 +57,16 @@ describe Setlist do
       end
       number_of_other.should == 5
     end
+    it "セットリストが1曲以上ある場合、1曲目は'first'フラグがONの曲である。" do
+      if @setlist_shuffled.size > 0
+        @setlist_shuffled[0].first.should == true
+      end
+    end
+    it "セットリストが1曲以上ある場合、ラストナンバーは'last'フラグがONの曲である。" do
+      if @setlist_shuffled.size > 0
+        @setlist_shuffled[@setlist_shuffled.size - 1].last.should == true
+      end
+    end
 =begin
 =end
   end
