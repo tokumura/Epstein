@@ -10,7 +10,6 @@ describe "musics/index.html.erb" do
     @music = Music.new
     render
   end
-
   it "タイトルに'曲リスト'が表示されている。" do
     rendered.should have_content("Blue Jay Way")
   end
