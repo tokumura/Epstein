@@ -1,22 +1,3 @@
-
 <%= render 'form' %>
+<%= render 'list' %>
 
-<div id="music_list">
-<h1>Listing musics</h1>
-<table>
-  <tr>
-    <th>Title</th>
-    <th></th>
-  </tr>
-
-<% @musics.each do |music| %>
-  <tr>
-    <td><a href="/musics/<%= music.id  %>/edit"><%= music.title %></a></td>
-
-    <td id="tr_<%= music.id  %>"><%= link_to '削除', music, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
-  </tr>
-<% end %>
-</table>
-</div>
-
-<br />

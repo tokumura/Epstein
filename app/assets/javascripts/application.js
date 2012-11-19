@@ -42,10 +42,10 @@ function remove_song(target) {
 }
 
 $(function() {
-    $("#musics_table tbody").sortable({
+    $("table#musics_table tbody").sortable({
       cursor: 'move',
       opacity: 0.7,
-      placeholder: 'ui-state-highlight',
+      placeholder: 'table ui-state-highlight',
     });
-    $("#musics_table tbody").disableSelection();
+    $("#musics_table").disableSelection();
 });
