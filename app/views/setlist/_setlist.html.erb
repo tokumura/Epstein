@@ -113,14 +113,13 @@
                 <tr id="tr_<%=row%>">
                   <td style="width:200px;"><%=music.title%></td>
                   <td style="width:70px;"><%=music.vocal%></td>
-                  <td style="width:20px;"><a href="javascript:remove_song('tr_<%=row%>')"><i class="icon-remove"></i></a></td>
+                  <td style="width:20px;">
+                    <a href="javascript:remove_song('tr_<%=row%>')" id="icon_<%=row%>"><i class="icon-remove"></i></a>
+                  </td>
                 </tr>
               <% end %>
             </tbody>
           </table>
-          <div id="hdn_number_of_songs" style="font-size:1px;font-color:#fff"><%=@setlist.number_of_songs%></div>
-          <div id="hdn_number_of_george" style="font-size:1px;font-color:#fff"><%=@setlist.number_of_george%></div>
-          <div id="hdn_number_of_ringo" style="font-size:1px;font-color:#fff"><%=@setlist.number_of_ringo%></div>
         </div>
       </div>
     </div> <!-- span7 -->
@@ -131,4 +130,6 @@
 <input type="hidden" id="addrow" value="<%=row%>" />
 <input type="hidden" id="addidx" value="1" />
 
-
+<div id="hdn_number_of_songs" style="font-size:0px;color:#779996"><%=@setlist.number_of_songs%></div>
+<div id="hdn_number_of_george" style="font-size:0px;font-color:#779996"><%=@setlist.number_of_george%></div>
+<div id="hdn_number_of_ringo" style="font-size:0px;font-color:#779996"><%=@setlist.number_of_ringo%></div>
