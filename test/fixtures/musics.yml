@@ -1419,7 +1419,7 @@ paul22:
   title: Hello, Goodbye
   vocal: Paul
   solo: f
-  first: f
+  first: t
   last: f
   piano: f
 paul23:
@@ -1452,7 +1452,7 @@ paul26:
   vocal: Paul
   solo: f
   first: f
-  last: f
+  last: t
   piano: f
 paul27:
   id: 183
@@ -1556,7 +1556,7 @@ paul39:
   vocal: Paul
   solo: f
   first: f
-  last: f
+  last: t
   piano: f
 paul40:
   id: 196
@@ -1796,7 +1796,7 @@ paul69:
   vocal: Paul
   solo: f
   first: f
-  last: f
+  last: t
   piano: f
 paul70:
   id: 226
@@ -1939,7 +1939,7 @@ lennon_mccartney2:
   title: A Hard Day's Night
   vocal: John&Paul
   solo: f
-  first: f
+  first: t
   last: f
   piano: f
 lennon_mccartney3:
@@ -2051,7 +2051,7 @@ lennon_mccartney16:
   title: I Saw Her Standing There
   vocal: John&Paul
   solo: f
-  first: f
+  first: t
   last: f
   piano: f
 lennon_mccartney17:
@@ -2318,4 +2318,37 @@ lennon_mccartney49:
   first: f
   last: f
   piano: f
+solo_paul1:
+  id: 291
+  title: Jet
+  vocal: Paul
+  solo: t
+  first: f
+  last: f
+  piano: f
+solo_paul2:
+  id: 292
+  title: Band On The Run
+  vocal: Paul
+  solo: t
+  first: f
+  last: f
+  piano: f
+solo_john1:
+  id: 293
+  title: Woman
+  vocal: John
+  solo: t
+  first: f
+  last: f
+  piano: f
+solo_john2:
+  id: 294
+  title: Imagine
+  vocal: John
+  solo: t
+  first: f
+  last: f
+  piano: t
+
 

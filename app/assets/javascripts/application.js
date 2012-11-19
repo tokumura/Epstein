@@ -28,7 +28,24 @@ function add_song(song, vocal) {
   $('#addrow').val(parseInt(addrow) + 1);
   $('#addidx').val(parseInt(addidx) + 1);
   addrow = $('#addrow').val();
+
+  var songs_num = $('div#songs_number').html();
+  var after_num = parseInt(songs_num) + 1
+  $('div#songs_number').html(after_num);
 }
+
 function remove_song(target) {
   $('tr#' + target).remove();
+  var songs_num = $('div#songs_number').html();
+  var after_num = parseInt(songs_num) - 1
+  $('div#songs_number').html(after_num);
 }
+
+$(function() {
+    $("#musics_table tbody").sortable({
+      cursor: 'move',
+      opacity: 0.7,
+      placeholder: 'ui-state-highlight',
+    });
+    $("#musics_table tbody").disableSelection();
+});
