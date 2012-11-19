@@ -97,7 +97,10 @@
     <div class="span7">
       <div class="span10">
         <div id="setlist">
-          <h4>セットリスト</h4>
+          <h4>
+            セットリスト　
+            全<div style="display: inline-block; _display: inline;" id="songs_number"><%=@setlist_shuffled.size%></div>曲
+          </h4>
           <table id="musics_table" class="table table-hover">
             <thead>
               <tr>
@@ -133,3 +136,4 @@
 <div id="hdn_number_of_songs" style="font-size:0px;color:#779996"><%=@setlist.number_of_songs%></div>
 <div id="hdn_number_of_george" style="font-size:0px;font-color:#779996"><%=@setlist.number_of_george%></div>
 <div id="hdn_number_of_ringo" style="font-size:0px;font-color:#779996"><%=@setlist.number_of_ringo%></div>
+
