@@ -45,7 +45,7 @@ $(function() {
     $("table#musics_table tbody").sortable({
       cursor: 'move',
       opacity: 0.7,
-      placeholder: 'table ui-state-highlight',
+      placeholder: 'table table-hover',
     });
     $("#musics_table").disableSelection();
 });
