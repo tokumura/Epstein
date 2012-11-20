@@ -1,6 +1,6 @@
 Epstein::Application.routes.draw do
   resources :mainmenu, :only => ['index']
-  resources :musics
+  resources :musics, :only => ['index', 'create', 'edit', 'update', 'destroy']
   resources :setlist, :only => ['index'] do
     collection do
       post:shuffle

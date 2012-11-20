@@ -59,9 +59,9 @@ describe MusicsController do
         assigns[:music].should eq(music)
       end
 
-      it "renders the new template" do
+      it "renders the index template" do
         post :create
-        response.should render_template("new")
+        response.should render_template("index")
       end
     end
   end
