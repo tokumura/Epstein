@@ -33,16 +33,16 @@
         <ul class="nav">
           <li class="<%=active_setlist%>"><%= link_to 'セットリスト作成', setlist_index_path %></li>
           <li class="<%=active_musics%>"><%= link_to '楽曲管理', musics_path %></li>
-          <% if active_setlist == "active" %>
-          <% end %>
         </ul>
-        <ul class="nav pull-right">
-          <li><%= link_to 'Ringo', '#ringo'%></li>
-          <li><%= link_to 'George', '#george'%></li>
-          <li><%= link_to 'Paul', '#paul'%></li>
-          <li><%= link_to 'John', '#john'%></li>
-          <li><%= link_to 'Top', '#top'%></li>
-        </ul>
+        <% if active_setlist == "active" %>
+          <ul class="nav pull-right">
+            <li><%= link_to 'Ringo', '#ringo'%></li>
+            <li><%= link_to 'George', '#george'%></li>
+            <li><%= link_to 'Paul', '#paul'%></li>
+            <li><%= link_to 'John', '#john'%></li>
+            <li><%= link_to 'Top', '#top'%></li>
+          </ul>
+        <% end %>
       </div><!-- /.nav-collapse -->
     </div>
   </div><!-- /navbar-inner -->
