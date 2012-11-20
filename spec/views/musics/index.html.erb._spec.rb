@@ -20,10 +20,6 @@ describe "musics/index.html.erb" do
     end
   end
 
-  it "'楽曲管理'というタイトルが表示されている。" do
-    rendered.should have_content("楽曲管理")
-  end
-
   it "'タイトル'というラベルが表示されている。" do
     rendered.should have_content("タイトル")
   end

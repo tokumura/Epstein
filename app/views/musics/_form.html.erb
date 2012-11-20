@@ -1,43 +1,49 @@
-<h1>楽曲管理</h1>
+<div class="span4">
+  <div class="hero-unit setlist">
+    <div id="edit_form">
+      <%= form_for(@music, :class => 'form-horizontal') do |f| %>
+        <% if @music.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
 
-<%= form_for(@music) do |f| %>
-  <% if @music.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
+            <ul>
+              <% @music.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
 
-      <ul>
-      <% @music.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <div class="field">
+          タイトル
+          <%= f.text_field :title, { :placeholder => "Song Title" } %>
+        </div>
+        <div class="field">
+          ボーカル 
+          <%= f.select :vocal, ['John', 'Paul', 'George', 'Ringo', 'John&Paul'] %>
+        </div>
+        <div class="field">
+          ソロ
+          <%= f.check_box :solo %>
+        </div>
+        <div class="field">
+          １曲目
+          <%= f.check_box :first %>
+        </div>
+        <div class="field">
+          ラスト
+          <%= f.check_box :last %>
+        </div>
+        <div class="field">
+          ピアノ
+          <%= f.check_box :piano %>
+        </div>
+        <div class="actions">
+          <%= f.submit :type => 'submit', :name => 'regist', :value => '登録',:class => "btn btn-primary" %>
+        </div>
+        <br>
       <% end %>
-      </ul>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field">
-    タイトル
-    <%= f.text_field :title %>
   </div>
-  <div class="field">
-    ボーカル 
-    <%= f.select :vocal, ['John', 'Paul', 'George', 'Ringo', 'John&Paul'] %>
-  </div>
-  <div class="field">
-    ソロ
-    <%= f.check_box :solo %>
-  </div>
-  <div class="field">
-    １曲目
-    <%= f.check_box :first %>
-  </div>
-  <div class="field">
-    ラスト
-    <%= f.check_box :last %>
-  </div>
-  <div class="field">
-    ピアノ
-    <%= f.check_box :piano %>
-  </div>
-  <div class="actions">
-    <%= f.submit :type => 'submit', :name => 'regist', :value => '登録' %>
-  </div>
-<% end %>
+</div>

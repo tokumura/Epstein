@@ -1,20 +1,22 @@
-<div id="music_list">
-<h1>Listing musics</h1>
-<table>
-  <tr>
-    <th>Title</th>
-    <th></th>
-  </tr>
+<div class="span5">
+  <div id="music_list">
+    <ul class="nav nav-list bs-docs-sidenav well">
+      <li class="nav-header" style="font-size:18px;">楽曲リスト</li>
+        <table>
+          <tr>
+            <th>タイトル</th>
+            <th>　　　　</th>
+          </tr>
 
-<% @musics.each do |music| %>
-  <tr>
-    <td><a href="/musics/<%= music.id  %>/edit"><%= music.title %></a></td>
-
-    <td id="tr_<%= music.id  %>"><%= link_to '削除', music, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
-  </tr>
-<% end %>
-</table>
+        <% @musics.each do |music| %>
+          <tr>
+            <td><a href="/musics/<%= music.id  %>/edit"><i class="icon-music"></i><%= music.title %></a></td>
+            <td id="tr_<%= music.id %>"><%= link_to '削除', music, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+          </tr>
+        <% end %>
+      </table>
+    </ul>
+  </div>
 </div>
 
-<br />
 
