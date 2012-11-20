@@ -1,14 +1,17 @@
 class SetlistController < ApplicationController
 
-  def index
+  def set_music_list
     @musics_johnpaul = Music.find_all_by_vocal('John&Paul')
     @musics_john = Music.find_all_by_vocal('John')
     @musics_paul = Music.find_all_by_vocal('Paul')
     @musics_george = Music.find_all_by_vocal('George')
     @musics_ringo = Music.find_all_by_vocal('Ringo')
+  end
 
+  def index
+    set_music_list
     @setlist = Setlist.new
-    conditions = {:number_of_songs => '10', :number_of_george => '0', :number_of_ringo => '0'}
+    conditions = {:number_of_songs => '9', :number_of_george => '2', :number_of_ringo => '1'}
     @setlist = @setlist.set_conditions(conditions)
 
     @setlist_shuffled = Array.new
@@ -19,15 +22,9 @@ class SetlistController < ApplicationController
   end
 
   def shuffle
-    @musics_johnpaul = Music.find_all_by_vocal('John&Paul')
-    @musics_john = Music.find_all_by_vocal('John')
-    @musics_paul = Music.find_all_by_vocal('Paul')
-    @musics_george = Music.find_all_by_vocal('George')
-    @musics_ringo = Music.find_all_by_vocal('Ringo')
-
+    set_music_list
     @setlist = Setlist.new
-    conditions = params[:setlist]
-    @setlist = @setlist.set_conditions(conditions)
+    @setlist = @setlist.set_conditions(params[:setlist])
     @setlist_shuffled = @setlist.shuffle(@setlist)
 
     respond_to do |format|

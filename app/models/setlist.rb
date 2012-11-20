@@ -10,7 +10,7 @@ class Setlist < ActiveRecord::Base
   end
 
   def shuffle(conditions)
-    num_songs = conditions.number_of_songs.to_i
+    num_songs_in_setlist= conditions.number_of_songs.to_i
     num_george = conditions.number_of_george.to_i
     num_ringo = conditions.number_of_ringo.to_i
 
@@ -29,25 +29,23 @@ class Setlist < ActiveRecord::Base
     other_all = Music.where('vocal != ? AND vocal != ? AND title != ? AND title != ?',
                             'George', 'Ringo', @first[0].title, @last[0].title)
 
-    if num_songs < (num_george + num_ringo)
-      num_songs = num_george + num_ringo
+    if num_songs_in_setlist < (num_george + num_ringo)
+      num_songs_in_setlist = num_george + num_ringo
     end
-
-    num_other = num_songs - (num_george + num_ringo)
 
     @shuffled = Array.new
 
-    num_johnpaul = num_songs - (num_george + num_ringo)
+    num_johnpaul = num_songs_in_setlist - (num_george + num_ringo)
 
     if num_johnpaul <= 2
-      @shuffled = @george.concat(@ringo).to_a.sample(num_songs - num_johnpaul)
+      @shuffled = @george.concat(@ringo).to_a.sample(num_songs_in_setlist - num_johnpaul)
       @shuffled = add_first_last(@shuffled, num_johnpaul, @first[0], @last)
     else
-      @other = other_all.to_a.sample(num_songs - (num_george + num_ringo + 2))
+      @other = other_all.to_a.sample(num_songs_in_setlist - (num_george + num_ringo + 2))
       @george = @george.to_a.sample(num_george)
       @ringo = @ringo.to_a.sample(num_ringo)
       @shuffled = @other.concat(@george.concat(@ringo))
-      @shuffled = @shuffled.to_a.sample(num_songs - 2)
+      @shuffled = @shuffled.to_a.sample(num_songs_in_setlist - 2)
       @shuffled = add_first_last(@shuffled, num_johnpaul, @first[0], @last)
     end
     @shuffled
@@ -62,6 +60,4 @@ class Setlist < ActiveRecord::Base
     end
     shuffled
   end
-
-
 end
