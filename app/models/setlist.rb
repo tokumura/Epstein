@@ -33,32 +33,35 @@ class Setlist < ActiveRecord::Base
       num_songs = num_george + num_ringo
     end
 
-    num_other = num_songs - (num_george + num_ringo) # '2'=(first+last)
-    if num_other < 0
-      num_other = 0
-    end
+    num_other = num_songs - (num_george + num_ringo)
 
     @shuffled = Array.new
 
     num_johnpaul = num_songs - (num_george + num_ringo)
-    if num_johnpaul == 0
-      @shuffled = @george.concat(@ringo).to_a.sample(num_songs)
-    elsif num_johnpaul == 1
-      @shuffled = @george.concat(@ringo).to_a.sample(num_songs - 1)
-      @shuffled.insert(0, @first[0])
-    elsif num_johnpaul == 2
-      @shuffled = @george.concat(@ringo).to_a.sample(num_songs - 2)
-      @shuffled.insert(0, @first[0])
-      @shuffled = @shuffled.concat(@last)
+
+    if num_johnpaul <= 2
+      @shuffled = @george.concat(@ringo).to_a.sample(num_songs - num_johnpaul)
+      @shuffled = add_first_last(@shuffled, num_johnpaul, @first[0], @last)
     else
       @other = other_all.to_a.sample(num_songs - (num_george + num_ringo + 2))
       @george = @george.to_a.sample(num_george)
       @ringo = @ringo.to_a.sample(num_ringo)
       @shuffled = @other.concat(@george.concat(@ringo))
       @shuffled = @shuffled.to_a.sample(num_songs - 2)
-      @shuffled.insert(0, @first[0])
-      @shuffled = @shuffled.concat(@last)
+      @shuffled = add_first_last(@shuffled, num_johnpaul, @first[0], @last)
     end
     @shuffled
   end
+
+  def add_first_last(shuffled, num_johnpaul, first, last)
+    if num_johnpaul == 1
+      shuffled.insert(0, first)
+    elsif num_johnpaul >= 2
+      shuffled.insert(0, first)
+      shuffled = shuffled.concat(last)
+    end
+    shuffled
+  end
+
+
 end
