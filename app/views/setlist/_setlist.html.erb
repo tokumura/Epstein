@@ -119,6 +119,8 @@
                   <td style="width:20px;">
                     <a href="javascript:remove_song('tr_<%=row%>')" id="icon_<%=row%>"><i class="icon-remove"></i></a>
                   </td>
+                  <input type="hidden" id="hdn_first_tr<%=row%>" value="<%=music.first%>" />
+                  <input type="hidden" id="hdn_last_tr<%=row%>" value="<%=music.last%>" />
                 </tr>
               <% end %>
             </tbody>
