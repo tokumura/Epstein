@@ -1,11 +1,13 @@
 == Welcome to Epstein
 
 Epsten is a web-application for all beatles lovers.
+
 It can create setlist randomly from all beatles number.
+
 Also, you can set some conditions for creating setlist.
 
 For setting up on your computer. (Require Ruby1.9.3, Rails3.2)
-  1. 'git clone git@vm-ubuntu2.epstein.git'.
+  1. 'git clone git@github.com:tokumura/Epstein.git'.
   2. 'cd epstein'
   3. 'bundle install'
   4. 'rails s'
