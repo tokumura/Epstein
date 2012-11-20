@@ -6,6 +6,7 @@ Epstein::Application.routes.draw do
       post:shuffle
     end
   end
+  root :to => 'mainmenu#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
